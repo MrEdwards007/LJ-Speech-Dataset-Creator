@@ -31,6 +31,33 @@ Potential caveats or challenges with the program:
 5. **Audio Quality**: The accuracy of transcriptions and segmentation's is highly dependent on the quality of the input audio. Poor-quality audio (e.g., with noise or unclear speech) may result in lower-quality transcriptions and segment splitting errors.
 6. **Non-English Languages**: While the program is primarily set up for English audio, it can be adapted for other languages since Whisper supports multiple languages and NLTK provides tools for various language processing.
 
+## Setup
+
+Highly recommend setting this up in your virtual environment.
+
+Instructions not provided for setting up virtual environment but the installation within that environment.
+
+```
+pip install -U openai-whisper 
+pip install nltk pandas pydub
+```
+
+```
+# on Ubuntu or Debian
+sudo apt update && sudo apt install ffmpeg
+
+# on Arch Linux
+sudo pacman -S ffmpeg
+
+# on MacOS using Homebrew (https://brew.sh/)
+brew install ffmpeg
+
+# on Windows using Chocolatey (https://chocolatey.org/)
+choco install ffmpeg
+
+# on Windows using Scoop (https://scoop.sh/)
+scoop install ffmpeg
+```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
